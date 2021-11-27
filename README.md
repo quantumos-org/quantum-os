@@ -46,6 +46,6 @@ But a QBit on the other hand can be <b>0</b> AND <b>1</b>. That means a normal b
 
 # 💰 Bitcoin & Lightcoin & Etherium Miner
 A good reason for Quantum OS is the BLE Miner (Bitcoin, Lightcoin, Etherium Miner). With this external feature you can mine cryptocoins.
-Go to: https://quantom-os.org/ble-miner to get more informations about it.
+Go to: https://quantom-os.org/ble-miner to get more informations about it. 
 
-
+<img src="assets/Mine.png" />
