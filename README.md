@@ -56,6 +56,8 @@ If you wan't to download QuantumOS you need the following tools:
 Tools:
 * Git
 * PIP
+* Nasm
+* Gnu Cross Compiler
 * CMake
 * Makefile
 * Python 3.x
