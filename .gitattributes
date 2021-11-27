@@ -2,3 +2,5 @@
 *.h   diff=cpp
 *.dtsi diff=dts
 *.dts  diff=dts
+*.pl   linguist-detectable=false
+*.cmake linguist-detectable=true
