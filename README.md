@@ -1,4 +1,9 @@
 <p align=center>
+  <img src="assets/Quantum.png" width="300" height="300"/>
+  <a href="https://www.quantum-os.org"><h1 align=center>Quantum OS - Be quantized!</h1></a>
+</p>
+
+<p align=center>
   <a href="https://reactos.org/project-news/reactos-0413-released/">
     <img alt="ReactOS 0.4.13 Release" src="https://img.shields.io/badge/release-0.4.13-0688CB.svg">
   </a>
