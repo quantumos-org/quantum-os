@@ -43,3 +43,9 @@ The main thing that differs normal computers from quantum computers are the qbit
 But a QBit on the other hand can be <b>0</b> AND <b>1</b>. That means a normal byte with 8 bits on a normal computer can contains the same information on a quantum computer but it only needs 4 bits for the same information.
 
 <img src="assets/Example-2.png" width="400" height="400"/>
+
+# 💰 Bitcoin & Lightcoin & Etherium Miner
+A good reason for Quantum OS is the BLE Miner (Bitcoin, Lightcoin, Etherium Miner). With this external feature you can mine cryptocoins.
+Go to: https://quantom-os.org/ble-miner to get more informations about it.
+
+
