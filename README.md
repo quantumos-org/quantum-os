@@ -49,3 +49,24 @@ A good reason for Quantum OS is the BLE Miner (Bitcoin, Lightcoin, Etherium Mine
 Go to: https://quantom-os.org/ble-miner to get more informations about it. 
 
 <img src="assets/Mine.png" />
+
+# ☕ Download & Install
+If you wan't to download QuantumOS you need the following tools:
+
+Tools:
+* Git
+* PIP
+* CMake
+* Makefile
+* Python 3.x
+
+Then execute:
+
+```git clone https://github.com/LeotendoDev/quantum-os.git```
+```cd quantum-os/```
+
+Now build the project from source with:
+
+```cmake ..```
+```make```
+```./quantom_exec```
