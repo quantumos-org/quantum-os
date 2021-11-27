@@ -28,3 +28,5 @@
 # What is Quantum Computing?
 The main thing that differs normal computers from quantum computers are the qbits. QBits are like normal Bits, a normal bit can only be <b>0</b> or <b>1</b>.
 But a QBit on the other hand can be <b>0</b> AND <b>1</b>. That means a normal byte with 8 bits on a normal computer can contains the same information on a quantum computer but it only needs 4 bits for the same information.
+
+<img src="assets/Example.png" />
