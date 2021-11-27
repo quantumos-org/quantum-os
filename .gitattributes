@@ -2,4 +2,4 @@
 *.h   diff=cpp
 *.dtsi diff=dts
 *.dts  diff=dts
-*.pl   linguist-detectable=CMake
+*.pl   language=CMake
