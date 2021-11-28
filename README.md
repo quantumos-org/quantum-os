@@ -50,7 +50,7 @@ Go to: https://quantom-os.org/ble-miner to get more informations about it.
 
 <img src="assets/Mine.png" />
 
-# ☕ Download & Install
+# ☕ Download & Install from source
 If you wan't to download QuantumOS you need the following tools:
 
 Tools:
