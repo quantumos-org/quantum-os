@@ -65,10 +65,13 @@ Tools:
 Then execute:
 
 ```git clone https://github.com/LeotendoDev/quantum-os.git```
+
 ```cd quantum-os/```
 
 Now build the project from source with:
 
 ```cmake ..```
+
 ```make```
+
 ```./quantom_exec```
