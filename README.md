@@ -54,13 +54,13 @@ Go to: https://quantom-os.org/ble-miner to get more informations about it.
 If you wan't to download QuantumOS you need the following tools:
 
 Tools:
-* Git
-* PIP
-* Nasm
-* Gnu Cross Compiler
-* CMake
-* Makefile
-* Python 3.x
+* <a href="https://git-scm.com/downloads">Git</a>
+* <a href="https://pypip.org">PIP</a>
+* <a href="https://nasm.org">Nasm</a>
+* <a href="https://github.com/gcc-mirror/gcc.git">Gnu Cross Compiler</a>
+* <a href="https://cmake.org/download/">CMake</a>
+* <a href="https://www.gnu.org/software/make/">Makefile</a>
+* <a href="https://www.python.org/downloads/">Python 3.x</a>
 
 Then execute:
 
