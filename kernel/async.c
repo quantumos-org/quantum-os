@@ -305,4 +305,15 @@ bool current_is_async(void)
 
 	return worker && worker->current_func == async_run_entry_fn;
 }
+
+/**
+ * Is the same like "current_is_async(void)",
+ * but with parameter: "struct worker *inst"
+ */
+bool current_is_async_pars(struct worker *inst) 
+{
+	inst = current_wq_worker();
+	return inst && inst->current_func == async_run_entry_fn;
+}
+
 EXPORT_SYMBOL_GPL(current_is_async);
