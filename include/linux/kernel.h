@@ -248,6 +248,7 @@ extern enum system_states {
 	SYSTEM_POWER_OFF,
 	SYSTEM_RESTART,
 	SYSTEM_SUSPEND,
+	SYSTEM_FAIL,
 } system_state;
 
 extern const char hex_asc[];
