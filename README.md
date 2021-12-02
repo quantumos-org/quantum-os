@@ -1,5 +1,8 @@
 <p align=center>
   <img src="assets/Quantum.png" width="300" height="300"/>
+  <i>
+    <br>An operating system for quantum computers based on the Linux kernel</br>
+  </i>
   <a href="https://www.quantum-os.org"><h1 align=center>Quantum OS - Be quantized!</h1></a>
 </p>
 
@@ -38,18 +41,6 @@ Build Type                    | Status                                          
   
 <br />
 
-# 🤔 What is Quantum Computing?
-The main thing that differs normal computers from quantum computers are the QuBits. QBits are like normal Bits, a normal bit can only be <b>0</b> or <b>1</b>.
-But a QuBits on the other hand can be <b>0</b> AND <b>1</b>. That means a normal byte with 8 bits on a normal computer can contains the same information on a quantum computer but it only needs 4 QuBits for the same information.
-
-<img src="assets/Example-2.png" width="400" height="400"/>
-
-# 💰 Bitcoin & Lightcoin & Etherium Miner
-A good reason for Quantum OS is the BLE Miner (Bitcoin, Lightcoin, Etherium Miner). With this external feature you can mine cryptocoins.
-Go to: https://quantom-os.org/ble-miner to get more informations about it. 
-
-<img src="assets/Mine.png" />
-
 # ☕ Download & Install from source
 If you wan't to download QuantumOS you need the following tools:
 
@@ -75,3 +66,5 @@ Now build the project from source with:
 ```make```
 
 ```./quantom_exec```
+
+<br />
