@@ -61,7 +61,7 @@ Then execute:
 
 Now build the project from source with:
 
-```cmake ..```
+```./configure```
 
 ```make```
 
@@ -84,6 +84,6 @@ QFC is a web & standalone application that you can use to control your quantum c
 
 ```git clone https://github.com/quantumos-org/quantum-frame.git```
 
-```make```
+```npm install```
 
-```./configure```
+```npm run```
