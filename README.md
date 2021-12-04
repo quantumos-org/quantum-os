@@ -68,3 +68,22 @@ Now build the project from source with:
 ```./quantom_exec```
 
 <br />
+
+# 🎮 Quantum Frame Controller
+
+QFC is a web & standalone application that you can use to control your quantum computer from another location
+
+<h3>Why?</h3>
+
+* Easy to use
+* 2auth
+* Secure
+* Runs in every browser
+
+<h3>Install</h3>
+
+```git clone https://github.com/quantumos-org/quantum-frame.git```
+
+```make```
+
+```./configure```
