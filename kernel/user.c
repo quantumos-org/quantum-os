@@ -102,6 +102,12 @@ struct user_struct root_user = {
 	.ratelimit	= RATELIMIT_STATE_INIT(root_user.ratelimit, 0, 0),
 };
 
+struct user_struct quantum_user = {
+	.__count	= REFCOUNT_INIT(20),
+	.uid		= 0x214,
+	.ratelimit	= RATELIMIT_STATE_INIT(root_user.ratelimit, 0, 0),
+};
+
 /*
  * These routines must be called with the uidhash spinlock held!
  */
