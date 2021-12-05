@@ -41,6 +41,13 @@ Build Type                    | Status                                          
   
 <br />
 
+# Features
+* User friendly
+* Efficient
+* Based on Linux
+* Supports Multithreading
+* etc.
+
 # ☕ Download & Install from source
 If you wan't to download QuantumOS you need the following tools:
 
