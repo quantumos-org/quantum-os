@@ -139,6 +139,9 @@ objtool_link()
 		if [ -n "${CONFIG_X86_SMAP}" ]; then
 			objtoolopt="${objtoolopt} --uaccess"
 		fi
+		if [ -n "${CONFIG_SLS}" ]; then
+			objtoolopt="${objtoolopt} --sls"
+		fi
 		info OBJTOOL ${1}
 		tools/objtool/objtool ${objtoolcmd} ${objtoolopt} ${1}
 	fi
@@ -400,6 +403,9 @@ if [ -n "${CONFIG_DEBUG_INFO_BTF}" -a -n "${CONFIG_BPF}" ]; then
 	${RESOLVE_BTFIDS} vmlinux
 fi
 
+info SYSMAP System.map
+mksysmap vmlinux System.map
+
 if [ -n "${CONFIG_BUILDTIME_TABLE_SORT}" ]; then
 	info SORTTAB vmlinux
 	if ! sorttable vmlinux; then
@@ -407,9 +413,6 @@ if [ -n "${CONFIG_BUILDTIME_TABLE_SORT}" ]; then
 		exit 1
 	fi
 fi
-
-info SYSMAP System.map
-mksysmap vmlinux System.map
 
 # step a (see comment above)
 if [ -n "${CONFIG_KALLSYMS}" ]; then

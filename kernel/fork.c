@@ -42,6 +42,7 @@
 #include <linux/mmu_notifier.h>
 #include <linux/fs.h>
 #include <linux/mm.h>
+#include <linux/mm_inline.h>
 #include <linux/vmacache.h>
 #include <linux/nsproxy.h>
 #include <linux/capability.h>
@@ -365,12 +366,14 @@ struct vm_area_struct *vm_area_dup(struct vm_area_struct *orig)
 		*new = data_race(*orig);
 		INIT_LIST_HEAD(&new->anon_vma_chain);
 		new->vm_next = new->vm_prev = NULL;
+		dup_vma_anon_name(orig, new);
 	}
 	return new;
 }
 
 void vm_area_free(struct vm_area_struct *vma)
 {
+	free_vma_anon_name(vma);
 	kmem_cache_free(vm_area_cachep, vma);
 }
 
@@ -1554,32 +1557,6 @@ static int copy_files(unsigned long clone_flags, struct task_struct *tsk)
 	error = 0;
 out:
 	return error;
-}
-
-static int copy_io(unsigned long clone_flags, struct task_struct *tsk)
-{
-#ifdef CONFIG_BLOCK
-	struct io_context *ioc = current->io_context;
-	struct io_context *new_ioc;
-
-	if (!ioc)
-		return 0;
-	/*
-	 * Share io context with parent, if CLONE_IO is set
-	 */
-	if (clone_flags & CLONE_IO) {
-		ioc_task_link(ioc);
-		tsk->io_context = ioc;
-	} else if (ioprio_valid(ioc->ioprio)) {
-		new_ioc = get_task_io_context(tsk, GFP_KERNEL, NUMA_NO_NODE);
-		if (unlikely(!new_ioc))
-			return -ENOMEM;
-
-		new_ioc->ioprio = ioc->ioprio;
-		put_io_context(new_ioc);
-	}
-#endif
-	return 0;
 }
 
 static int copy_sighand(unsigned long clone_flags, struct task_struct *tsk)
