@@ -1,3 +1,5 @@
+> **_NOTE:_**  I need a developer for the website! Text me: <leotendosteinhoff@gmail.com>
+
 <p align=center>
   <img src="assets/Quantum.png" width="300" height="300"/>
   <i>
