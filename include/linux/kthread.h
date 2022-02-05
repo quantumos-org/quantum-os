@@ -33,7 +33,8 @@ struct task_struct *kthread_create_on_cpu(int (*threadfn)(void *data),
 					  unsigned int cpu,
 					  const char *namefmt);
 
-void set_kthread_struct(struct task_struct *p);
+void get_kthread_comm(char *buf, size_t buf_size, struct task_struct *tsk);
+bool set_kthread_struct(struct task_struct *p);
 
 void kthread_set_per_cpu(struct task_struct *k, int cpu);
 bool kthread_is_per_cpu(struct task_struct *k);
@@ -95,6 +96,8 @@ void *kthread_probe_data(struct task_struct *k);
 int kthread_park(struct task_struct *k);
 void kthread_unpark(struct task_struct *k);
 void kthread_parkme(void);
+void kthread_exit(long result) __noreturn;
+void kthread_complete_and_exit(struct completion *, long) __noreturn;
 
 int kthreadd(void *unused);
 extern struct task_struct *kthreadd_task;
